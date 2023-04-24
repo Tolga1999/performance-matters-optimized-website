@@ -15,5 +15,4 @@ index.get('/', (request, response) => {
      
      })
 
-
 export default index
