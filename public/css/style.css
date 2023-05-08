@@ -7,6 +7,7 @@
  --third-color: #F26F21;
  --main-font: 'Mukta', sans-serif;
  --main-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+ --text-color-white: white;
 }
 
 *{
@@ -60,25 +61,72 @@ h2, h3, h4, p{
  }
 
  /* PLANTS */
+ .alle-stekjes-plants-h1{
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: center;
+  margin: 1.5em;
+ }
+
+
+ .alle-stekjes-plants-h1-span{
+  color: var(--third-color);
+  font-weight: 800;
+ }
+
  .plant-container{
   color: var(--primary-color);
   background-image: linear-gradient(var(--background-color-green), var(--background-color));
   min-height: 20em;
   border-radius: 0.5em;
   display: flex;
-  filter: drop-shadow(0px 9px 7px #6D6C6C);
+  justify-content: space-between;
+  box-shadow: var(--main-box-shadow);
   margin-bottom: 2em;
 
  }
-
- .plant-container > h2{
-  font-weight: bold;
+ 
+ .plant-container-text{
+  padding: 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
  }
 
- .plant-img{
-  width: 5em;
+ .plant-container-text > h2{
+  font-size: 1.5em;
+  font-weight: 800;
+  margin: 0;
+ }
+
+ .plant-container-spans > span{
+  font-weight: 1em;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  display: flex;
+  align-items: center;
+ }
+
+ .plant-container-spans > span > svg{
+  margin-right: 0.25em;
+ }
+
+ .plant-container-img{
+  width: 10em;
+  object-fit: cover;
+  border-radius: 0.5em;
+ }
+
+ .plant-container-button{
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  border: none;
+  padding: 0.5em;
+  border-radius: 1em;
  }
  /* PLANTS END */
+
  .our-workshops-text{
   color: black;
   font-weight: 800;
@@ -179,5 +227,9 @@ h2, h3, h4, p{
   .time-line-item:nth-of-type(even){
     margin-left: calc(50% - 8px);
   }
+
+  /* PLANTS DESKTOP */
+  
+  /* PLANTS DESKTOP END */
 
 }
