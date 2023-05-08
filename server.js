@@ -1,5 +1,6 @@
 import express from 'express'
-import indexRoute from './routes/index.js'
+import index from './routes/index.js'
+import plants from './routes/plants.js'
 const server = express()
 
 // Stel het poortnummer in
@@ -15,9 +16,8 @@ server.use(express.static('public'))
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
-server.use('/', indexRoute)
-
-
+server.use(index)
+server.use(plants)
 
 // Start met luisteren
 server.listen(server.get('port'), () => {
