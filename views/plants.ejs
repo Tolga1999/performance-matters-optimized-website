@@ -1,3 +1,16 @@
 <%- include('./partials/head.ejs') %>
-<h1>PLANTS</h1>
+<h1>Alle Stekjes!</h1>
+
+<% stekjes.forEach(stekje => { %>
+<section class="plant-container">
+    <div>
+        <h2><%= stekje.naam %></h2>
+        <span><%= stekje.giftig %></span>
+        <span>Makkelijk</span>
+        <span><%= stekje.voeding %></span>
+    </div>
+    <img class="plant-img" src="<%=stekje.fotos[0].original %>" alt="<%= stekje.naam %>">
+</section>
+<% }) %>
+
 <%- include('./partials/foot.ejs') %>

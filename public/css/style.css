@@ -1,6 +1,7 @@
 
 :root{
  --background-color:rgba(251, 253, 252, 1);
+ --background-color-green: #E5F6DF;
  --primary-color: rgba(51, 52, 103, 1);
  --secondary-color: rgba(229, 246, 223, 1);
  --third-color: #F26F21;
@@ -11,7 +12,7 @@
   box-sizing: border-box;
   font: 100%/1.4 Arial, Helvetica, sans-serif;
   line-height: 110%;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   font-family: var(--main-font);
 }
 
@@ -51,5 +52,23 @@ h2, h3, h4, p{
   color: var(--third-color);
  }
 
+ /* PLANTS */
+ .plant-container{
+  color: var(--primary-color);
+  background-image: linear-gradient(var(--background-color-green), var(--background-color));
+  min-height: 20em;
+  border-radius: 0.5em;
+  display: flex;
+  filter: drop-shadow(0px 9px 7px #6D6C6C);
+  margin-bottom: 2em;
 
+ }
 
+ .plant-container > h2{
+  font-weight: bold;
+ }
+
+ .plant-img{
+  width: 5em;
+ }
+ /* PLANTS END */
