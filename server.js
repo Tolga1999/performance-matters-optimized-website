@@ -2,6 +2,7 @@ import express from 'express'
 import index from './routes/index.js'
 import plants from './routes/plants.js'
 import workshops from './routes/workshops.js'
+import duurzaamheid from './routes/duurzaamheid.js'
 const server = express()
 
 // Stel het poortnummer in
@@ -20,6 +21,7 @@ server.use(express.urlencoded({ extended: true }))
 server.use(index)
 server.use(plants)
 server.use(workshops)
+server.use(duurzaamheid)
 
 // Start met luisteren
 server.listen(server.get('port'), () => {
