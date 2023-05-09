@@ -187,7 +187,15 @@ h2, h3, h4, p{
 @media only screen and (min-width: 768px){
 
   /* PLANTS DESKTOP */
-  
+  .desktop-plants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .plant-container{
+    max-width: 25em;
+  }
   /* PLANTS DESKTOP END */
 
 }
