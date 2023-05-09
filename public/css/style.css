@@ -123,6 +123,76 @@ nav{
   color: var(--third-color);
   font-weight: 800;
  }
+ 
+ .our-workshops-text{
+  color: black;
+  font-weight: 800;
+  width: 80%;
+  line-height: 140%;
+  max-width: 30rem;
+ }
+
+ .time-line{
+  width: 90%;
+  margin: 7em auto;
+}
+
+.time-line-all-items{
+  position: relative;
+}
+
+.time-line-all-items::before{
+content: '';
+position: absolute;
+width: 2px;
+height: 100%;
+background-color: var(--background-color-green);
+left: 9px;
+}
+
+.time-line-item{
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.time-line-item-title{
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary-color);
+  padding: 5px 0 5px 0;
+}
+
+.time-line-item-text{
+  background-image: linear-gradient(var(--background-color-green), var(--background-color));
+  padding: 1rem;
+  border-radius: 24px;
+  margin: 1rem 0 0 0;
+  font-weight: 700;
+}
+
+.time-line-item:last-child{
+  margin-bottom: 0;
+}
+
+.time-line-dot{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--background-color-green)
+}
+
+.time-line-item:nth-child(odd),
+.time-line-item:nth-child(even){
+  padding-left: 37px;
+}
+
+.time-line-image{
+  width: 100%;
+  margin: 1em auto;
+}
 
  /* PLANTS */
  .alle-stekjes-plants-h1{
@@ -188,64 +258,9 @@ nav{
   padding: 0.5em;
   border-radius: 1em;
  }
+
  /* PLANTS END */
 
- .our-workshops-text{
-  color: black;
-  font-weight: 800;
-  width: 80%;
-  line-height: 140%;
-  max-width: 30rem;
- }
-
-.time-line{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  color: var(--primary-color);
-  margin: 5rem auto 5rem auto;
-  width: 90%;
-  height: 60rem;
-}
-
-.time-line:before{
-  content: "";
-  display: flex;
-  position: absolute;
-  height: 100%;
-  width: 4px;
-  background-color: var(--secondary-color);
-}
-
-.item-title, .item-date, .item-location{
-  margin: 0 0 0 3rem;
-  font-weight: 700;
-}
-
-.item-title{
-  font-size: 26px;
-}
-
-.item-location, .item-date{
-  font-size: 18px;
-}
-
-.time-line-text{
-  width: 80%;
-  max-width: 30rem;
-  margin: 1rem 0 0 3rem;
-  background-image: linear-gradient(var(--background-color-green), var(--background-color));
-  border-radius: 24px;
-  padding: 1rem 1.5rem;
-  color: black;
-  box-shadow: var(--main-box-shadow);
-}
-
-.time-line-text p{
-  font-weight: 700;
-  line-height: 120%;
-}
 
 @media only screen and (min-width: 768px){
 
@@ -291,6 +306,47 @@ nav{
     padding: 0;
   }
 
+  /* NAV END */
+
+  /* WORKSHOPS */
+
+  .our-workshops{
+    align-items: baseline;
+    margin: 5rem 0 0 20%;
+  }
+
+  .our-workshops-title{
+    font-size: 60px;
+  }
+
+  .time-line-item:nth-of-type(odd) {
+    margin-left: auto;
+  }
+
+  .time-line-item:nth-of-type(odd) p {
+    margin-left: auto;
+  }
+
+  .time-line-all-items::before{
+      left: calc(50% - 1px);
+  }
+
+  .time-line-item:nth-child(odd){
+      padding-right: calc(50% + 30px);
+      text-align: right;
+  }
+  .time-line-item:nth-child(even){
+      padding-left: calc(50% + 30px);
+  }
+
+  .time-line-dot{
+      left: calc(50% - 10px);
+  }
+
+  .time-line-item-text{
+    text-align: left;
+  }
+
   /* PLANTS DESKTOP */
   .desktop-plants{
     display: flex;
@@ -301,6 +357,10 @@ nav{
   .plant-container{
     max-width: 25em;
   }
+
+
+
+
   /* PLANTS DESKTOP END */
 
 }
