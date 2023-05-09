@@ -187,6 +187,12 @@ h2, h3, h4, p{
 @media only screen and (min-width: 768px){
 
   /* PLANTS DESKTOP */
+  .alle-stekjes-plants-h1{
+    text-align: start;
+    margin-left: 0;
+    font-size: 2.5em;
+  }
+
   .desktop-plants{
     display: flex;
     flex-wrap: wrap;
@@ -195,6 +201,14 @@ h2, h3, h4, p{
 
   .plant-container{
     max-width: 25em;
+  }
+
+  .plant-container-spans > span{
+    margin-bottom: 1.25em;
+  }
+
+  .plant-container-button{
+    min-width: 12.5em;
   }
   /* PLANTS DESKTOP END */
 
