@@ -12,6 +12,7 @@
 
 *{
   box-sizing: border-box;
+  margin: 0;
   font: 100%/1.4 Arial, Helvetica, sans-serif;
   line-height: 110%;
   /* background-color: var(--background-color); */
@@ -25,6 +26,7 @@ h2, h3, h4, p{
 .container{
   width: 90%;
   margin: auto;
+  overflow: hidden;
 }
 
 .container > img{
@@ -37,6 +39,67 @@ h2, h3, h4, p{
   padding: 0 .5em;
 }
 
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+}
+
+.plant-swap-logo{
+  width: 7rem;
+  height: auto;
+}
+
+.main-nav_list{
+  position: absolute;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  background-color: white;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  gap: 1rem;
+  padding: 5rem 2rem;
+
+}
+
+.main-nav_list a{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  width: 100%;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav_list a:nth-of-type(2){
+  color: var(--third-color);
+}
+
+.main-nav_list-open{
+  display: block;
+  transform: translateX(0);
+}
+
+.chevron-right{
+  width: 1.5rem;
+}
+
+.close-button{
+  width: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
  /* Workshops */
 
  .our-workshops{
@@ -45,6 +108,7 @@ h2, h3, h4, p{
   align-items: center;
   color: var(--primary-color);
   gap: 1.5rem;
+  margin: 5rem 0 0 0;
  }
 
  .our-workshops-title{
@@ -68,7 +132,6 @@ h2, h3, h4, p{
   text-align: center;
   margin: 1.5em;
  }
-
 
  .alle-stekjes-plants-h1-span{
   color: var(--third-color);
@@ -185,6 +248,48 @@ h2, h3, h4, p{
 }
 
 @media only screen and (min-width: 768px){
+
+  /* NAV */
+
+  nav{
+    width: fit-content;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 1rem;
+  }
+
+  .main-nav_list{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 0;
+    width: fit-content;
+    gap: 1.5rem;
+  }
+
+  .chevron-right{
+    display: none;
+  }
+
+  .close-button{
+    display: none;
+  }
+
+  .main-nav_list a{
+    border: none;
+    font-size: 16px;
+    width: auto;
+    padding: 0;
+  }
 
   /* PLANTS DESKTOP */
   
