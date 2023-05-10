@@ -737,6 +737,20 @@ background: var(--primary-color);
   justify-content: space-between;
   box-shadow: var(--main-box-shadow);
 }
+.show-all-plants{
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  border: none;
+  padding: 1em;
+  border-radius: 1em;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 22rem;
+  margin: 3rem auto;
+
+}
 
 /* INDEX PAGE END */
   /* WORKSHOPS */
