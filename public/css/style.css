@@ -294,7 +294,7 @@ nav {
   font-size: 2em;
   font-weight: 800;
   text-align: center;
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .alle-stekjes-plants-h1-span {
@@ -371,7 +371,7 @@ nav {
 .single-plant-h2 {
   font-size: 2em;
   font-weight: 800;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
 }
 
 .single-plant-spans{
@@ -409,6 +409,8 @@ nav {
 .single-plant-container-img {
   object-fit: cover;
   border-radius: 0 0 2em 2em;
+  width: auto;
+  height: 20em;
 }
 
 .korte-beschrijving-container{
@@ -571,23 +573,27 @@ nav {
 
   /* PLANT */
   .single-plant-container{
-    min-width: 85%;
+    margin: 0 auto;
+    min-width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: start;
     border-radius: 2em;
   }
   .single-plant-text-container{
-    padding: 4em;
-    padding-left: 5em;
+    padding: 2em;
     order: 2;
     flex-grow: 2;
+    max-width: 55em;
   }
 
   .single-plant-container-img{
     border-radius: 2em 0 0 2em;
-    min-width: 35em;
+    width: 25em;
+    min-width: 20em;
+    height: auto;
     order: 1;
+    max-height: 40em;
   }
 
   .single-plant-h2{
@@ -599,12 +605,13 @@ nav {
   }
 
   .single-plant-spans{
-    margin-bottom: 2.25em;
+    margin-bottom: 1.5em;
   }
 
   .desktop-plant-beschrijving{
     display: inline;
     line-height: 1.75;
+    padding-right: 5em;
   }
 
   /* PLANT END */
