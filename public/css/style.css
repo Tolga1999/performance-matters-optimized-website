@@ -48,12 +48,11 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 
 }
 
 .plant-swap-logo {
-  width: 7rem;
+  width: 8rem;
   height: auto;
 }
 
@@ -384,6 +383,10 @@ nav {
     width: fit-content;
   }
 
+  .plant-swap-logo {
+    width: 10rem;
+  }
+
   .menu-icon {
     display: none;
   }
@@ -402,7 +405,7 @@ nav {
     height: auto;
     padding: 0;
     width: fit-content;
-    gap: 1.5rem;
+    gap: 2.5rem;
   }
 
   .chevron-right {
