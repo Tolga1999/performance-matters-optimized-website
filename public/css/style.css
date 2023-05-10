@@ -23,11 +23,35 @@
   overflow: hidden;
 }
 
+/* footer */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.footer-social_media-button{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.footer-social_media-button img{
+  width: 100%;
+}
 
 .footer-social_media-button svg {
   width: 4em;
   padding: 0 .5em;
+  fill: var(--primary-color)
 }
+
+/* nav */
 
 nav {
   width: 100%;
@@ -54,7 +78,6 @@ nav {
   font-size: 20px;
   gap: 1rem;
   padding: 5rem 2rem;
-
 }
 
 .main-nav_list a {
@@ -88,6 +111,19 @@ nav {
   right: 1rem;
   top: 1rem;
 }
+/* 
+.workshops-ambiance{
+  position: absolute;
+  top: 40%;
+  transform: rotate(-40deg);
+  left: -50%;
+  width: 200%;
+  height: 50%;
+  border-radius: 60%;
+  z-index: -1;
+  background-color: var(--background-color-green);
+  box-shadow: var(--main-box-shadow);
+} */
 
 /* Workshops */
 
