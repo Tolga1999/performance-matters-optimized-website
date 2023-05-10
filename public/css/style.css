@@ -609,6 +609,10 @@ form input:last-of-type{
   font-weight: 700;
 }
 
+form input:last-of-type:hover{
+  opacity: 90%;
+}
+
 .iframe-contact-wrapper{
   margin: 3rem 0 0 0;
 }
@@ -662,7 +666,7 @@ form input:last-of-type{
   .main-nav_list a{
     border: 1px solid transparent;
     font-size: 16px;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     height: fit-content;
   }
