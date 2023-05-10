@@ -15,7 +15,7 @@
   margin: 0;
   font: 100%/1.4 Arial, Helvetica, sans-serif;
   font-family: var(--main-font);
-  
+
 }
 
 .container {
@@ -112,7 +112,7 @@ position: relative;
   display: flex;
   justify-content: space-between;
   box-shadow: var(--main-box-shadow);
-  margin: 5em 0 0 0;  
+  margin: 5em 0 0 0;
 }
 
 .footer-social_media-button svg {
@@ -181,19 +181,19 @@ nav {
   right: 1rem;
   top: 1rem;
 }
-/* 
-.workshops-ambiance{
-  position: absolute;
-  top: 40%;
-  transform: rotate(-40deg);
-  left: -50%;
-  width: 200%;
-  height: 50%;
-  border-radius: 60%;
-  z-index: -1;
-  background-color: var(--background-color-green);
-  box-shadow: var(--main-box-shadow);
-} */
+  /*
+  .workshops-ambiance{
+    position: absolute;
+    top: 40%;
+    transform: rotate(-40deg);
+    left: -50%;
+    width: 200%;
+    height: 50%;
+    border-radius: 60%;
+    z-index: -1;
+    background-color: var(--background-color-green);
+    box-shadow: var(--main-box-shadow);
+  } */
 
 /* Workshops */
 
@@ -391,12 +391,19 @@ nav {
 }
 
 /* PLANTS */
+.desktop-plants{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .alle-stekjes-plants-h1 {
   color: var(--primary-color);
   font-size: 2em;
   font-weight: 800;
   text-align: center;
   margin: 0.5em;
+  margin-bottom: 1em;
 }
 
 .alle-stekjes-plants-h1-span {
@@ -532,6 +539,92 @@ nav {
   display: none;
 }
 /* PLANT END*/
+
+
+/* CONTACT */
+
+.contact{
+  margin: 5rem auto 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  color: var(--primary-color);
+  max-width: 50rem;
+
+}
+
+.contact h1{
+  font-size: 32px;
+  width: fit-content;
+  margin: 0 auto 3rem auto;
+}
+
+.contact h1 span:nth-of-type(1){
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.contact h1 span:nth-of-type(2){
+  color: var(--third-color);
+  font-weight: 800;
+}
+
+.contact-list{
+  width: fit-content;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+}
+
+.contact-list li{
+  font-weight: 700;
+}
+
+.location-iframe p{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.form-iframe-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 20rem;
+}
+
+form label{
+  font-weight: 700;
+  padding: 0 0 0 0.5rem;
+}
+
+form input, form textarea{
+  width: 100%;
+  margin: 0.5rem 0 1.5rem 0;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+form input:last-of-type{
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  background-color: var(--primary-color);
+  color: white;
+  width: 8rem;
+  border: none;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.iframe-contact-wrapper{
+  margin: 3rem 0 0 0;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -725,8 +818,6 @@ background: var(--primary-color);
     justify-content: space-between;
   }
 
-
-
   /* PLANTS DESKTOP */
   .alle-stekjes-plants-h1 {
     margin-left: 0;
@@ -735,8 +826,9 @@ background: var(--primary-color);
 
   .desktop-plants {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 75px;
     justify-content: center;
   }
 
@@ -796,8 +888,32 @@ background: var(--primary-color);
     padding-right: 5em;
   }
 
-  /* PLANT END */
+.contact h1 span:nth-of-type(1){
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 60px;
+}
 
+.contact h1 span:nth-of-type(2){
+  color: var(--third-color);
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.contact-list{
+  margin: 0 0 5rem 0;
+}
+
+.form-iframe-wrapper{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 4rem 0;
+}
+
+.iframe-contact-wrapper{
+  margin: 0;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 1024px){
@@ -842,7 +958,7 @@ background: var(--primary-color);
     justify-content: space-between;
     box-shadow: var(--main-box-shadow);
   }
-  
+
   .home-plant-container {
     color: var(--primary-color);
     background-image: linear-gradient(var(--background-color-green), var(--background-color));
