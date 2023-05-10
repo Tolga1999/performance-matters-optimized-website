@@ -285,12 +285,19 @@ nav {
 }
 
 /* PLANTS */
+.desktop-plants{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .alle-stekjes-plants-h1 {
   color: var(--primary-color);
   font-size: 2em;
   font-weight: 800;
   text-align: center;
   margin: 0.5em;
+  margin-bottom: 1em;
 }
 
 .alle-stekjes-plants-h1-span {
@@ -581,8 +588,9 @@ nav {
 
   .desktop-plants {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 75px;
     justify-content: center;
   }
 
