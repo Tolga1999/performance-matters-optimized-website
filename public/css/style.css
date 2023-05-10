@@ -528,7 +528,7 @@ nav {
 
   .single-plant-container-img{
     border-radius: 2em 0 0 2em;
-    width: 100vw;
+    min-width: 35em;
     order: 1;
   }
 
