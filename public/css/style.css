@@ -730,6 +730,7 @@ form input:last-of-type:hover {
     flex-direction: column-reverse;
   }
 
+
 }
 .home-page_img-plant-icon {
   position: absolute;
@@ -742,7 +743,7 @@ form input:last-of-type:hover {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 38px;
+  font-size: 21px;
   font-weight: 700;
   color: var(--primary-color);
 }
@@ -953,9 +954,9 @@ background: var(--primary-color);
   font-size: 60px;
 }
 .footer-plant {
-  width: 16%;
+  width: 81%;
   position: absolute;
-  left: 42%;
+  left: 10%;
   z-index: -1;
 }
 
@@ -1006,6 +1007,10 @@ background: var(--primary-color);
     text-align: left;
     font-size: 100px;
   }
+  .home-page_info-second-title{
+    font-size: 38px;
+   
+  }
   .home-page_img-plant-icon {
     position: absolute;
     left: 50%;
@@ -1024,7 +1029,7 @@ background: var(--primary-color);
   .home-plant-container:nth-child(2) {
     color: var(--primary-color);
     background-image: linear-gradient(var(--background-color-green), var(--background-color));
-    height: 22em;
+    height: 23em;
     width: 35em;
     border-radius: 0.5em;
     margin: 0 -5em 0 0;
