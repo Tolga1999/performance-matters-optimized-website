@@ -1,5 +1,6 @@
 <%- include('./partials/head.ejs') %>
-<section class="single-plant-container plant-container">
+<h1 class="alle-stekjes-plants-h1">Plant <span class="alle-stekjes-plants-h1-span">gegevens</span></h1>
+<section class="single-plant-container">
     <div class="single-plant-text-container">
         <h2 class="single-plant-h2"><%= stekje.naam %></h2>
         <div class="single-plant-spans">
@@ -70,7 +71,7 @@
     <img class="single-plant-container-img" src="<%=stekje.fotos[0].original %>" alt="<%= stekje.naam %>">
 </section>
 
-<section class="single-plant-container plant-container korte-beschrijving-container">
+<section class="single-plant-container korte-beschrijving-container">
     <h2 class="single-plant-h2 beschrijving-h2">Korte beschrijving</h2>
     <p>De Aglaonema 'Pink Princess' is een hybride kamerplant met opvallende roze vlekken en tinten op zijn grote,
         glanzende diepgroene bladeren. De plant gedijt goed in omgevingen met weinig licht en heeft minimale verzorging
