@@ -754,14 +754,14 @@ height: 3px;
 background: var(--primary-color);
 }
 .home-page_img-plant{
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
 }
 .home-plant-container {
   color: var(--primary-color);
   background-image: linear-gradient(var(--background-color-green), var(--background-color));
   height: 100%;
-  width: 30em;
+  width: 22em;
   border-radius: 0.5em;
   display: flex;
   justify-content: space-between;
