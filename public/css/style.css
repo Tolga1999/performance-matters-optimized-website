@@ -86,7 +86,7 @@ height: 3px;
 background: var(--primary-color);
 }
 .home-page_info > p{
-  line-height: 140% !important;
+  line-height:  33.24px !important;
   margin-bottom: 1rem;
   max-width: 100rem;
 }
@@ -449,6 +449,7 @@ nav {
 
 .plant-container-img {
   width: 14em;
+  clip-path: ellipse(83% 69% at 85% 61%);
   object-fit: cover;
   border-radius: 0 0.5em 0.5em 0;
 }
