@@ -302,12 +302,11 @@ nav {
   color: var(--primary-color);
   background-image: linear-gradient(var(--background-color-green), var(--background-color));
   min-height: 20em;
-  max-width: 30em;
+  min-width: 30em;
   border-radius: 0.5em;
   display: flex;
   justify-content: space-between;
   box-shadow: var(--main-box-shadow);
-  margin-bottom: 2em;
 }
 
 .plant-container-text {
@@ -320,7 +319,7 @@ nav {
 .plant-container-text>h2 {
   font-size: 1.5em;
   font-weight: 800;
-  margin: 0;
+  margin-bottom: 0.5em;
 }
 
 .plant-container-spans>span {
@@ -332,13 +331,13 @@ nav {
 }
 
 .plant-container-spans>span>svg {
-  margin-right: 0.25em;
+  margin-right: 0.75em;
 }
 
 .plant-container-img {
-  width: 10em;
+  width: 14em;
   object-fit: cover;
-  border-radius: 0.5em;
+  border-radius: 0 0.5em 0.5em 0;
 }
 
 .plant-container-link {
@@ -576,7 +575,6 @@ nav {
 
   /* PLANTS DESKTOP */
   .alle-stekjes-plants-h1 {
-    text-align: start;
     margin-left: 0;
     font-size: 3em;
   }
@@ -584,7 +582,8 @@ nav {
   .desktop-plants {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: center;
   }
 
   .plant-container {

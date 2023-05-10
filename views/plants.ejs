@@ -35,7 +35,7 @@
 
             <a class="plant-container-link" href="/stekje?id=<%= stekje.id %>">Lees meer</a>
         </div>
-        <img class="plant-container-img" src="<%=stekje.fotos[0].original %>" alt="<%= stekje.naam %>">
+        <img class="plant-container-img" src="<%=stekje.fotos[0].original %>" alt="<%= stekje.naam %>" loading="lazy">
     </section>
     <% }) %>
 </section>
