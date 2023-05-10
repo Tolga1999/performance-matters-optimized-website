@@ -4,6 +4,7 @@ import plants from './routes/plants.js'
 import plant from './routes/plant.js'
 import workshops from './routes/workshops.js'
 import duurzaamheid from './routes/duurzaamheid.js'
+import contact from './routes/contact.js'
 const server = express()
 
 // Stel het poortnummer in
@@ -24,7 +25,7 @@ server.use(plants)
 server.use(workshops)
 server.use(duurzaamheid)
 server.use(plant)
-
+server.use(contact)
 // Start met luisteren
 server.listen(server.get('port'), () => {
   console.log(`Application started on http://localhost:${server.get('port')}`)
