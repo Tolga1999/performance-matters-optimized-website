@@ -448,7 +448,7 @@ nav {
 .plant-container-img {
   width: 14em;
   object-fit: cover;
-  border-radius: 0 0.5em 0.5em 0;
+  border-radius: 0 0.5em 0.5em 0  ;
   min-height: 100%;
   flex-grow: 2;
 }
@@ -461,7 +461,7 @@ nav {
   border-radius: 1em;
   text-align: center;
   text-decoration: none;
-  max-width: 9em;
+  width: 9em;
 }
 
 /* PLANTS END */
