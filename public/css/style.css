@@ -22,17 +22,17 @@
 .container {
   width: 90%;
   margin: auto;
-  overflow: hidden;
 }
 
 /* footer */
 
 footer{
+  position: relative ;
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 4rem 0 0 0;
   width: 100%;
 }
 
@@ -45,6 +45,12 @@ footer{
 
 .footer-social_media-button img{
   width: 100%;
+}
+.footer-plant{
+  width: 95%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 /* index page */
 .home-page{
@@ -82,11 +88,12 @@ background: var(--primary-color);
 .home-page_info > p{
   line-height: 140% !important;
   margin-bottom: 1rem;
+  max-width: 100rem;
 }
 .home-page_img {
 position: relative;
 }
-.home-page_img-plant{
+.home-page_img-plant img{
   width: 100%;
   height: 100%;
 }
@@ -104,11 +111,17 @@ position: relative;
   font-weight: 800;
   color: var(--primary-color);
 }
+.home-desktop-plants{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 .home-plant-container{
   color: var(--primary-color);
   background-image: linear-gradient(var(--background-color-green), var(--background-color));
   min-height: 20em;
-  min-width: 25em;
+  width: 100%;
   border-radius: 0.5em;
   display: flex;
   justify-content: space-between;
@@ -690,9 +703,9 @@ form input:last-of-type:hover{
 }
 .home-page_img-plant-icon {
   position: absolute;
-  left: 50%;
+  /* left: 50%; */
   top: 11%;
-  width: 50%;
+  width: 100%;
   z-index: -1;
 }
 .home-page_info-second-title{
@@ -710,9 +723,9 @@ width: 60px;
 height: 3px;
 background: var(--primary-color);
 }
-.home-page_img-plant img{
-  width: 100%;
-  height: 100%;
+.home-page_img-plant{
+  width: 120%;
+  height: 120%;
 }
 .home-plant-container {
   color: var(--primary-color);
@@ -900,6 +913,12 @@ background: var(--primary-color);
   font-weight: 800;
   font-size: 60px;
 }
+.footer-plant {
+  width: 16%;
+  position: absolute;
+  left: 42%;
+  z-index: -1;
+}
 
 .contact-list{
   margin: 0 0 5rem 0;
@@ -948,13 +967,28 @@ background: var(--primary-color);
     text-align: left;
     font-size: 100px;
   }
+  .home-page_img-plant-icon {
+    position: absolute;
+    left: 50%;
+    top: 11%;
+    width: 50%;
+    z-index: -1;
+  }
+  .home-desktop-plants{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0 0 0 -3.5em;
+    padding-bottom: 1rem;
+  }
   .home-plant-container:nth-child(2) {
     color: var(--primary-color);
     background-image: linear-gradient(var(--background-color-green), var(--background-color));
-    height: 20em;
-    width: 30em;
+    height: 22em;
+    width: 35em;
     border-radius: 0.5em;
-    margin-left: 1em;
+    margin: 0 -5em 0 0;
     display: flex;
     justify-content: space-between;
     box-shadow: var(--main-box-shadow);
@@ -970,5 +1004,6 @@ background: var(--primary-color);
     justify-content: space-between;
     box-shadow: var(--main-box-shadow);
   }
+
 
 }}
