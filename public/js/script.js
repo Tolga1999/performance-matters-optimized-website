@@ -3,8 +3,6 @@ const navList = document.querySelector(".main-nav_list")
 const body = document.querySelector('body')
 const closeMenuIcon = document.querySelector(".close-button")
 
-console.log(menuIcon)
-
 menuIcon.addEventListener('click', showMenu)
 closeMenuIcon.addEventListener('click', closeMenu)
 
