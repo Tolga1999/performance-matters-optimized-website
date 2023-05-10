@@ -14,17 +14,9 @@
   box-sizing: border-box;
   margin: 0;
   font: 100%/1.4 Arial, Helvetica, sans-serif;
-  line-height: 110%;
-  /* background-color: var(--background-color); */
   font-family: var(--main-font);
 }
 
-h2,
-h3,
-h4,
-p {
-  max-width: 30rem;
-}
 
 .container {
   width: 90%;
@@ -106,7 +98,14 @@ nav {
 
 /* Workshops */
 
-.workshops-wrapper {
+.our-workshops{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+ .workshops-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,14 +113,7 @@ nav {
   margin: 5rem 0 0 0;
 }
 
-.our-workshops {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--primary-color);
-}
-
-.our-workshops-title {
+ .our-workshops-title{
   font-size: 32px;
 }
 
@@ -148,8 +140,7 @@ nav {
   margin: 1rem 0 0 0;
 }
 
-
-.time-line {
+.time-line{
   width: 90%;
   margin: 7em auto;
 }
@@ -229,9 +220,73 @@ nav {
   font-size: 32px;
 }
 
-.durability h1 span:nth-of-type(2) {
-  color: var(--third-color);
-}
+  .durability h1 span:nth-of-type(2) {
+    color: var(--third-color);
+  }
+  
+  .durability h1 span:nth-of-type(2){
+    color: var(--third-color);
+  }
+
+  .durability-text{
+    width: 85%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 0 0 0;
+    line-height: 140%;
+  }
+
+  .durability-text-item-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .durability-text-item-2 section, .durability-text-item-3 section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .durability-text-item-1 p{
+    font-weight: 600;
+    line-height: 140%;
+  }
+
+  .durability-text-item-2 p, .durability-text-item-3 p{
+    line-height: 140%;
+  }
+
+  .durability-text-item-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .durability-text-item-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .durability-image{
+    width: 10rem;
+    margin: 2rem 0;
+  }
+
+  .durability-image-1{
+    width: 10rem;
+    margin: 2rem 0;
+  }
+
+  .durability-image-2{
+    width: 10rem;
+    margin: 2rem 0;
+  }
 
 /* PLANTS */
 .alle-stekjes-plants-h1 {
@@ -438,10 +493,8 @@ nav {
     flex-direction: row;
     position: relative;
     align-items: flex-start;
-    justify-content: space-between;
-    margin: 5rem 0 0 5%;
-    padding-right: 5rem;
-    padding-left: 3rem;
+    justify-content: center;
+    margin: 5rem 0 0 0;
   }
 
   .our-workshops-title {
@@ -485,6 +538,10 @@ nav {
   .time-line-item-text {
     text-align: left;
   }
+
+  /* DURABILITY */
+
+
 
   /* PLANTS DESKTOP */
   .alle-stekjes-plants-h1 {
