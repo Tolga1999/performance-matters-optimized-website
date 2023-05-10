@@ -1,16 +1,16 @@
-
-:root{
- --background-color:rgba(251, 253, 252, 1);
- --background-color-green: #E5F6DF;
- --primary-color: rgba(51, 52, 103, 1);
- --secondary-color: rgba(229, 246, 223, 1);
- --third-color: #F26F21;
- --main-font: 'Mukta', sans-serif;
- --main-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
- --text-color-white: white;
+:root {
+  --background-color: rgba(251, 253, 252, 1);
+  --background-color-green: #E5F6DF;
+  --primary-color: rgba(51, 52, 103, 1);
+  --secondary-color: rgba(229, 246, 223, 1);
+  --third-color: #F26F21;
+  --main-font: 'Mukta', sans-serif;
+  --main-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  --text-color-white: white;
+  --text-color-black: black;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   font: 100%/1.4 Arial, Helvetica, sans-serif;
@@ -19,14 +19,17 @@
   font-family: var(--main-font);
 }
 
-h2, h3, h4, p{
+h2,
+h3,
+h4,
+p {
   max-width: 30rem;
 }
 
-.container{
+.container {
   width: 90%;
-  margin: 0 auto;
-  /* overflow: hidden; */
+  margin: auto;
+  overflow: hidden;
 }
 
 /* Dit heb ik (Ralph) uitgecommend omdat het niet handig is om op elke afbeeldingen deze afmetingen te hebben */
@@ -36,12 +39,12 @@ h2, h3, h4, p{
   height: 100%;
 } */
 
-.footer-social_media-button svg{
+.footer-social_media-button svg {
   width: 4em;
   padding: 0 .5em;
 }
 
-nav{
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -49,12 +52,12 @@ nav{
 
 }
 
-.plant-swap-logo{
+.plant-swap-logo {
   width: 7rem;
   height: auto;
 }
 
-.main-nav_list{
+.main-nav_list {
   position: absolute;
   top: 0;
   display: none;
@@ -70,7 +73,7 @@ nav{
 
 }
 
-.main-nav_list a{
+.main-nav_list a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 700;
@@ -82,29 +85,29 @@ nav{
   justify-content: space-between;
 }
 
-.main-nav_list a:nth-of-type(2){
+.main-nav_list a:nth-of-type(2) {
   color: var(--third-color);
 }
 
-.main-nav_list-open{
+.main-nav_list-open {
   display: block;
   transform: translateX(0);
 }
 
-.chevron-right{
+.chevron-right {
   width: 1.5rem;
 }
 
-.close-button{
+.close-button {
   width: 2rem;
   position: absolute;
   right: 1rem;
   top: 1rem;
 }
 
- /* Workshops */
+/* Workshops */
 
-.workshops-wrapper{
+.workshops-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,51 +115,51 @@ nav{
   margin: 5rem 0 0 0;
 }
 
-.our-workshops{
+.our-workshops {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--primary-color);
- }
+}
 
- .our-workshops-title{
+.our-workshops-title {
   font-size: 32px;
- }
+}
 
- .our-workshops-title span:nth-of-type(1){
+.our-workshops-title span:nth-of-type(1) {
   font-weight: 800;
- }
+}
 
- .our-workshops-title span:nth-of-type(2){
+.our-workshops-title span:nth-of-type(2) {
   color: var(--third-color);
   font-weight: 800;
- }
- 
- .our-workshops-text{
+}
+
+.our-workshops-text {
   color: black;
   font-weight: 800;
-  width: 85%;
+  width: 80%;
   line-height: 140%;
   max-width: 30rem;
- }
+}
 
-.workshops-page-main-image{
+.workshops-page-main-image {
   width: 50%;
   max-width: 20rem;
-  margin: 4rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 
-.time-line{
+.time-line {
   width: 90%;
   margin: 7em auto;
 }
 
-.time-line-all-items{
+.time-line-all-items {
   position: relative;
 }
 
-.time-line-all-items::before{
+.time-line-all-items::before {
   content: '';
   position: absolute;
   width: 2px;
@@ -165,30 +168,31 @@ nav{
   left: 9px;
 }
 
-.time-line-item{
+.time-line-item {
   margin-bottom: 3em;
   position: relative;
 }
 
-.time-line-item-title{
+.time-line-item-title {
   font-size: 26px;
   font-weight: 800;
   color: var(--primary-color);
   padding: 5px 0 5px 0;
 }
 
-.time-line-item-text{
+.time-line-item-text {
   background-image: linear-gradient(var(--background-color-green), var(--background-color));
   padding: 1rem;
   border-radius: 24px;
   margin: 1rem 0 0 0;
+  font-weight: 700;
 }
 
-.time-line-item:last-child{
+.time-line-item:last-child {
   margin-bottom: 0;
 }
 
-.time-line-dot{
+.time-line-dot {
   position: absolute;
   top: 30px;
   left: 0;
@@ -199,184 +203,199 @@ nav{
 }
 
 .time-line-item:nth-child(odd),
-.time-line-item:nth-child(even){
+.time-line-item:nth-child(even) {
   padding-left: 37px;
 }
 
-.time-line-image{
+.time-line-image {
   width: 100%;
   margin: 1em auto;
 }
 
 /* DUURZAAMHEID */
 
-  .durability{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5rem 0 0 0;
-    font-weight: 800;
-  }
+.durability {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 0 0;
+  font-weight: 800;
+}
 
-  .durability h1{
-    color: var(--primary-color);
-    margin: 0 auto;
-  }
+.durability h1 {
+  color: var(--primary-color);
+}
 
-  .durability h1 span{
-    font-weight: 800;
-    font-size: 32px;
-  }
+.durability h1 span {
+  font-weight: 800;
+  font-size: 32px;
+}
 
-  .durability h1 span:nth-of-type(2){
-    color: var(--third-color);
-  }
-
-  .durability-text{
-    width: 85%;
-    max-width: 30rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem 0 0 0;
-    line-height: 140%;
-  }
-
-  .durability-text-item-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .durability-text-item-2 section, .durability-text-item-3 section{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .durability-text-item-1 p{
-    font-weight: 600;
-    line-height: 140%;
-  }
-
-  .durability-text-item-2 p, .durability-text-item-3 p{
-    line-height: 140%;
-  }
-
-  .durability-text-item-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .durability-text-item-3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .durability-image{
-    width: 10rem;
-  }
-
-  .durability-image-1{
-    width: 10rem;
-    margin: 2rem auto;
-  }
-
-  .durability-image-2{
-    width: 10rem;
-    margin: 2rem auto;
-  }
+.durability h1 span:nth-of-type(2) {
+  color: var(--third-color);
+}
 
 /* PLANTS */
- .alle-stekjes-plants-h1{
+.alle-stekjes-plants-h1 {
   color: var(--primary-color);
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 800;
   text-align: center;
-  margin: 1.5em;
- }
+  margin: 1em;
+}
 
- .alle-stekjes-plants-h1-span{
+.alle-stekjes-plants-h1-span {
   color: var(--third-color);
   font-weight: 800;
- }
+}
 
- .plant-container{
+.plant-container {
   color: var(--primary-color);
   background-image: linear-gradient(var(--background-color-green), var(--background-color));
   min-height: 20em;
+  max-width: 30em;
   border-radius: 0.5em;
   display: flex;
   justify-content: space-between;
   box-shadow: var(--main-box-shadow);
   margin-bottom: 2em;
- }
- 
- .plant-container-text{
+}
+
+.plant-container-text {
   padding: 1.5em 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- }
+}
 
- .plant-container-text > h2{
+.plant-container-text>h2 {
   font-size: 1.5em;
   font-weight: 800;
   margin: 0;
- }
+}
 
- .plant-container-spans > span{
+.plant-container-spans>span {
   font-weight: 1em;
   font-weight: 600;
   margin-bottom: 0.75em;
   display: flex;
   align-items: center;
- }
+}
 
- .plant-container-spans > span > svg{
+.plant-container-spans>span>svg {
   margin-right: 0.25em;
- }
+}
 
- .plant-container-img{
+.plant-container-img {
   width: 10em;
   object-fit: cover;
   border-radius: 0.5em;
- }
+}
 
- .plant-container-button{
+.plant-container-link {
   background-color: var(--primary-color);
   color: var(--text-color-white);
   border: none;
   padding: 0.5em;
   border-radius: 1em;
- }
+  text-align: center;
+  text-decoration: none;
+}
 
- /* PLANTS END */
+/* PLANTS END */
 
-@media only screen and (min-width: 768px){
+/* PLANT */
+.single-plant-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+}
+
+.single-plant-text-container {
+  padding: 1.25em;
+}
+
+.single-plant-h2 {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.75em;
+}
+
+.single-plant-spans{
+  display: flex;
+  flex-direction: column;
+}
+
+.single-plant-spans > span{
+  margin-bottom: 1em;
+}
+
+.single-plant-span-container{
+  display: flex;
+  align-items: center;
+}
+
+.single-plant-span-container > svg{
+  transform: translate(-0.25em);
+}
+
+.single-plant-span-container > p {
+  font-size: 1.25em;
+  font-weight: 600;
+
+}
+
+.plant-data{
+  margin-left: 2em;
+  margin-top: 0.25em;
+  font-weight: bold;
+  color: var(--text-color-black);
+  line-height: 1.35;
+}
+
+.single-plant-container-img {
+  object-fit: cover;
+  border-radius: 0 0 2em 2em;
+}
+
+.korte-beschrijving-container{
+  padding: 1.25em;
+}
+
+.beschrijving-h2{
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+.korte-beschrijving-container > p{
+  line-height: 1.75;
+  color: var(--text-color-black);
+}
+
+.desktop-plant-beschrijving{
+  display: none;
+}
+/* PLANT END*/
+
+@media only screen and (min-width: 768px) {
 
   /* NAV */
 
-  nav{
+  nav {
     width: fit-content;
   }
 
-  .menu-icon{
+  .menu-icon {
     display: none;
   }
 
-  header{
+  header {
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 1rem 2rem 1rem 1rem;
   }
 
-  .main-nav_list{
+  .main-nav_list {
     position: static;
     display: flex;
     flex-direction: row;
@@ -386,15 +405,15 @@ nav{
     gap: 1.5rem;
   }
 
-  .chevron-right{
+  .chevron-right {
     display: none;
   }
 
-  .close-button{
+  .close-button {
     display: none;
   }
 
-  .main-nav_list a{
+  .main-nav_list a {
     border: none;
     font-size: 16px;
     width: auto;
@@ -404,30 +423,32 @@ nav{
   /* NAV END */
 
   /* WORKSHOPS */
-  
-  .workshops-wrapper{
+
+  .workshops-wrapper {
     margin: 0;
     align-items: flex-start;
   }
 
-  .our-workshops{
+  .our-workshops {
     display: flex;
     flex-direction: row;
     position: relative;
     align-items: flex-start;
     justify-content: space-between;
     margin: 5rem 0 0 5%;
+    padding-right: 5rem;
+    padding-left: 3rem;
   }
 
-  .our-workshops-title{
+  .our-workshops-title {
     font-size: 60px;
   }
 
-  .our-workshops-text{
+  .our-workshops-text {
     max-width: 24rem;
   }
 
-  .workshops-page-main-image{
+  .workshops-page-main-image {
     width: 50%;
     right: -10%;
   }
@@ -440,110 +461,91 @@ nav{
     margin-left: auto;
   }
 
-  .time-line-all-items::before{
-      left: calc(50% - 1px);
+  .time-line-all-items::before {
+    left: calc(50% - 1px);
   }
 
-  .time-line-item:nth-child(odd){
-      padding-right: calc(50% + 30px);
-      text-align: right;
-  }
-  .time-line-item:nth-child(even){
-      padding-left: calc(50% + 30px);
+  .time-line-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
   }
 
-  .time-line-dot{
-      left: calc(50% - 10px);
+  .time-line-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
   }
 
-  .time-line-item-text{
+  .time-line-dot {
+    left: calc(50% - 10px);
+  }
+
+  .time-line-item-text {
     text-align: left;
   }
 
-  /* DURABILITY */
-
-  .durability{
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .durability h1{
-    margin: 0;
-  }
-
-  .durability h1 span{
-    font-size: 60px;
-  }
-
-  .durability-text{
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .durability-text-item-1{
-    position: relative;
-    width: 100%;
-    flex-direction: row;
-    margin: 0 auto;
-  }
-
-  .durability-text-item-1 p{
-    width: 60%;
-  }
-
-  .durability-text-item-2{
-    margin: 10rem auto 0 auto;
-    flex-direction: row;
-    gap: 3rem;
-  }
-
-  .durability-text-item-3{
-    margin: 2rem auto 0 auto;
-    flex-direction: row;
-    gap: 3rem;
-  }
-
-  .durability-text-item-3 section{
-    padding: 1rem;
-  }
-
-  .durability-image-1{
-    width: 25rem;
-    margin: 0;
-  }
-
-  .durability-image-2{
-    width: 20rem;
-    margin: 0;
-  }
-
-
   /* PLANTS DESKTOP */
-  .alle-stekjes-plants-h1{
+  .alle-stekjes-plants-h1 {
     text-align: start;
     margin-left: 0;
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
-  .desktop-plants{
+  .desktop-plants {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .plant-container{
+  .plant-container {
     max-width: 25em;
   }
 
-  .plant-container-spans > span{
+  .plant-container-spans>span {
     margin-bottom: 1.25em;
   }
 
-  .plant-container-button{
-    min-width: 12.5em;
+  .plant-container-link {
+    width: 10em;
+  }
+  /* PLANTS DESKTOP END */
+
+  /* PLANT */
+  .single-plant-container{
+    min-width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border-radius: 2em;
+  }
+  .single-plant-text-container{
+    padding: 4em;
+    padding-left: 5em;
+    order: 2;
+    flex-grow: 2;
   }
 
-  /* PLANTS DESKTOP END */
+  .single-plant-container-img{
+    border-radius: 2em 0 0 2em;
+    width: 100vw;
+    order: 1;
+  }
+
+  .single-plant-h2{
+    font-size: 3em;
+  }
+
+  .korte-beschrijving-container{
+    display: none;
+  }
+
+  .single-plant-spans{
+    margin-bottom: 2.25em;
+  }
+
+  .desktop-plant-beschrijving{
+    display: inline;
+    line-height: 1.75;
+  }
+
+  /* PLANT END */
 
 }

@@ -1,6 +1,7 @@
 import express from 'express'
 import index from './routes/index.js'
 import plants from './routes/plants.js'
+import plant from './routes/plant.js'
 import workshops from './routes/workshops.js'
 import duurzaamheid from './routes/duurzaamheid.js'
 const server = express()
@@ -22,6 +23,7 @@ server.use(index)
 server.use(plants)
 server.use(workshops)
 server.use(duurzaamheid)
+server.use(plant)
 
 // Start met luisteren
 server.listen(server.get('port'), () => {
