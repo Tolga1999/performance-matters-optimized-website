@@ -23,7 +23,6 @@
   width: 90%;
   margin: auto;
 }
-
 /* footer */
 
 footer{
@@ -128,7 +127,20 @@ position: relative;
   box-shadow: var(--main-box-shadow);
   margin: 5em 0 0 0;
 }
+.show-all-plants{
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  border: none;
+  padding: 1em;
+  border-radius: 1em;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 22rem;
+  margin: 3rem auto;
 
+}
 .footer-social_media-button svg {
   width: 4em;
   padding: 0 .5em;
@@ -738,21 +750,6 @@ background: var(--primary-color);
   justify-content: space-between;
   box-shadow: var(--main-box-shadow);
 }
-.show-all-plants{
-  background-color: var(--primary-color);
-  color: var(--text-color-white);
-  border: none;
-  padding: 1em;
-  border-radius: 1em;
-  text-decoration: none;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 22rem;
-  margin: 3rem auto;
-
-}
-
 /* INDEX PAGE END */
   /* WORKSHOPS */
 
