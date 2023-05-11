@@ -132,6 +132,7 @@ footer{
   box-shadow: var(--main-box-shadow);
   margin: 5em 0 0 0;
 }
+
 .show-all-plants{
   background-color: var(--primary-color);
   color: var(--text-color-white);
@@ -144,8 +145,12 @@ footer{
   justify-content: center;
   width: 22rem;
   margin: 3rem auto;
-
 }
+
+.show-all-plants:hover{
+  opacity: 90%;
+}
+
 .footer-social_media-button svg {
   width: 4em;
   padding: 0 .5em;
@@ -484,6 +489,10 @@ nav {
   text-align: center;
   text-decoration: none;
   max-width: 9em;
+}
+
+.plant-container-link:hover{
+  opacity: 90%;
 }
 
 /* PLANTS END */
