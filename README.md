@@ -1,4 +1,5 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+![Ontwerp zonder titel (15)](https://github.com/Tolga1999/performance-matters-optimized-website/assets/54691201/f0a477d7-2f71-4b99-aece-cc90334ca8a8)
 
 # Titel
 
