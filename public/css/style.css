@@ -145,6 +145,11 @@ nav {
   height: auto;
 }
 
+.menu-icon{
+  width: 2.75em;
+  height: 4.25em;
+}
+
 .main-nav_list {
   position: absolute;
   top: 0;
@@ -447,8 +452,9 @@ nav {
 
 .plant-container-img {
   width: 14em;
+  height: 18em;
   object-fit: cover;
-  border-radius: 0 0.5em 0.5em 0  ;
+  border-radius: 0 0.5em 0.5em 0;
   min-height: 100%;
   flex-grow: 2;
 }
