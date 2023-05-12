@@ -21,7 +21,7 @@
   <h2 class="home-page_title-h2">Nieuwste stekjes</h2>
   <section class="home-desktop-plants">
     <% stekjes.forEach(stekje => { %>
-    <section class="home-plant-container">
+    <section class="plant-container">
         <div class="plant-container-text">
             <h2><%= stekje.naam %></h2>
             <!-- <span><%= stekje.giftig %></span>
@@ -51,13 +51,15 @@
                     </svg> 1x per week</span>
             </div>
 
-            <a class="plant-container-link" href="/stekje?id=<%= stekje.id %>"  loading="lazy">Lees meer</a>
+            <a class="plant-container-link" href="/stekje?id=<%= stekje.id %>">Lees meer</a>
         </div>
-        <img class="plant-container-img" src="<%=stekje.fotos[0].original %>" alt="<%= stekje.naam %>" loading="lazy">
+        <picture>
+            <source
+             srcset="<%=stekje.fotos[0].smallAsWebP %>" type="image/webp" />
+             <img class="plant-container-img" src="<%=stekje.fotos[0].small %>" alt="<%= stekje.naam %>" loading="lazy">
+        </picture>
     </section>
     <% }) %>
-</section>
-<a class="show-all-plants" href="\plants">Bekijk alle stekjes</a>
 </section>
 
 
