@@ -10,14 +10,13 @@
       beschikbaar. Een stekje doneren mag natuurlijk ook! Hiervoor kun je gewoon langskomen bij de OBA en hoef je geen
       formulier in te vullen.</p>
   </article>
-    <!-- <img class="home-page_img-plant" src="/assets/Home-plant-img.png" alt="#TODO" width="865" height="665"> -->
     <picture  class="home-page_img-plant">
-      <source media="(min-width:650px)" srcset="/assets/Home-plant-img.png" width="865" height="665">
-      <source media="(min-width:465px)" srcset="/assets/Home-plant-img.png" width="465" height="265">
-      <img src="/assets/Home-plant-img.png" alt="Flowers" width="865" height="665">
+      <source media="(min-width:650px)" srcset="/assets/Home-plant-img.png" width="865" height="665"  loading="lazy">
+      <source media="(min-width:465px)" srcset="/assets/Home-plant-img.png" width="465" height="265"  loading="lazy">
+      <img src="/assets/Home-plant-img.png" alt="Flowers" width="865" height="665"  loading="lazy">
     </picture>
 </section>
-<img class="home-page_img-plant-icon" src="/assets/home-page-backround-plant.png" alt="#TODO">
+<img class="home-page_img-plant-icon" src="/assets/home-page-backround-plant.png" alt="#TODO"  loading="lazy">
 <section>
   <h2 class="home-page_title-h2">Nieuwste stekjes</h2>
   <section class="home-desktop-plants">
@@ -52,9 +51,9 @@
                     </svg> 1x per week</span>
             </div>
 
-            <a class="plant-container-link" href="/stekje?id=<%= stekje.id %>">Lees meer</a>
+            <a class="plant-container-link" href="/stekje?id=<%= stekje.id %>"  loading="lazy">Lees meer</a>
         </div>
-        <img class="plant-container-img" src="<%=stekje.fotos[0].original %>" alt="<%= stekje.naam %>">
+        <img class="plant-container-img" src="<%=stekje.fotos[0].original %>" alt="<%= stekje.naam %>" loading="lazy">
     </section>
     <% }) %>
 </section>
